@@ -1,0 +1,160 @@
+:root {
+    --amarelo: #FFE882;
+    --vermelho: #E50914;
+    --preto: #141414;
+    --branco: #fff;
+    --cinza: #6d6d6eb3;
+    --cinza-nav: #AAA;
+    --melao: #FF473D;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 0 0 0 1.25rem;
+}
+
+#header .logo {
+    color: var(--vermelho);
+    font-size: 2.5rem;
+    font-family: 'Quantico', 'Arial Black', Times, sans-serif;
+    text-decoration: none;
+    letter-spacing: .2rem;
+}
+
+#header nav .list-item {
+    display: inline-flex;
+    padding: 0 0.9rem;
+    letter-spacing: 0.04em;
+}
+
+#header nav .list-item a {
+ 
+    text-decoration: none;
+    color: var(--cinza-nav);
+    transition: 0.6s;
+}
+
+#header nav .list-item a:hover  {
+    color: var(--branco); 
+} 
+
+.main-content{
+    font-size: 1.101rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30rem;
+    background-size: cover;
+    background: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50)100% ), url('../images/better_call_saul.jpg');
+    margin: 0 0 .313rem 0;
+}
+
+.main-content .info {
+    margin: 0 0 0 1.25rem;
+    width: 70%;
+}
+
+.main-content .description {
+    margin: .625rem 0 2.5rem 0;
+    line-height: 1.33em;
+}
+.main-content .title {
+    margin: 15% 0 0 0;
+    font-size: 2.5rem; 
+}
+
+.main-content .title #BetCal {
+    font-family: 'EB Garamond', serif;
+    color: var(--amarelo);
+}
+
+.main-content .title #Saul {
+    font-family: 'Dancing Script', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4.5rem;
+    color: var(--melao);
+    margin: 0 0 0 .5rem;
+}
+
+.main-content .button {
+    background: rgba(0,0,0,.50);
+    border-radius: .24rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: .938rem 1.875rem;
+    margin: 0 .938rem 0 0;
+    transition: 0.6s;
+}
+
+.main-content .button:hover {
+    background: var(--branco);
+    color: var(--preto);
+    opacity: 0.6;
+}
+
+.main-content #assistir {
+    color: var(--preto);
+    background: var(--branco);
+}
+
+.main-content #mais_info {
+    color: var(--branco);
+    background: var(--cinza);
+    
+}
+
+.button i {
+    margin: 0 0.5rem 0 0;
+}
+
+.carrossel h2 {
+    display: block;
+    margin: 1.5rem 0 1.2rem 1rem;
+}
+
+.box-card {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/*  responsividade   */
+
+@media screen and (max-width: 43.75rem) {
+    #header {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .button {
+        margin: .313rem 0 0 0;
+        width: 18.75rem; 
+    }
+
+    .main-content #mais_info {
+        margin: .45rem 0 0 0;
+        
+    }
+    .carrossel h2 {
+        margin: 3.5rem 0 1.6rem 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 62.5rem) {
+
+    .main-content .description {
+        width: 50%;
+    }
+}
