@@ -3,9 +3,9 @@ A clone from Netflix's main menu for DIO's Bootcamp Carrefour Web Developer.
 
 ## Visit DIO's official website for more information:
 
-  - [English](https://www.dio.me/en)
+  - <a href="https://www.dio.me/en" target="_blank" rel="noopener noreferrer">English</a>
       
-  - [Español](https://www.dio.me/es)
+  - <a href="https://www.dio.me/es" target="_blank" rel="noopener noreferrer">Español</a>
     
-  - [Português](https://www.dio.me/)
+  - <a href="https://www.dio.me/" target="_blank" rel="noopener noreferrer">Português</a>
    
